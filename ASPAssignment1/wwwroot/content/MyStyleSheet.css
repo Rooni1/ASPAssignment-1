@@ -1,0 +1,142 @@
+﻿{
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    
+}
+.pagelayout{
+    display:flex;
+    height: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+.navbarlinks ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbarlinks li{
+    list-style: none;
+}
+.navbarlinks li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.navbarlinks li:hover{
+    background-color: blue;
+}
+.togglebutton {
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.togglebutton .bar{
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+@media(max-width: 600px ) {
+    .togglebutton {
+        display: flex;
+    }
+
+    .navbarlinks {
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .navbarlinks ul{
+        width: 100%;
+        flex-direction:column;
+    }
+    .navbar li{
+        text-align: center;
+    }
+    .navbarlinks li a{
+        padding: .5rem 1rem;
+    }
+    .navbarlinks.active{
+        display: flex;
+    }
+       
+}
+.footer {
+    display: block;
+    background-color: brown;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.footercontainer {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 2rem;
+    text-align:center;
+    
+}
+.contactinfo{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    align-content:flex-start;
+    color: black;
+    width: 100%;
+       
+}
+.myinfo{
+    display: block;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    height: 50%;
+
+}
+.projectcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+.projectcontainer > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+.myform{
+    background-color: lightblue;
+    border: solid 1px;
+    padding:5px;
+    justify-content:normal;
+}
+.mygithub {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    align-content:center;
+    
+}
+
+
+

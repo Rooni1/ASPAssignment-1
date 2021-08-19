@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+@model  IEnumerable<ASPAssignment1.Models.Contact>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/content/MyStyleSheet.css" />
+</head>
+<body>
+    
+        <header>
+            <nav class="navbar">
+                <div class=" logo"> </div>
+                <a class="togglebutton">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbarlinks">
+                    <ul>
+                        <li><a href="https://localhost:44366">Home</a></li>
+                        <li><a href="https://localhost:44366/home/about">About</a></li>
+                        <li><a href="https://localhost:44366/home/project">Projects</a></li>
+                        <li><a href="https://localhost:44366/contact/contactinfo">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            @RenderBody()
+        </div>
+
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/Javascript/MyJavaScript.js"></script>
+        <footer class="border-top footer text-muted">
+            <div class="footercontainer">
+                &copy;  Haroon Munir @DateTime.Today
+            </div>
+        </footer>
+    
+</body>
+</html>

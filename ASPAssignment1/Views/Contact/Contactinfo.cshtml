@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+<div class="contactinfo">
+    <div class="myinfo">
+        <h1> Wellcome To My Website</h1>
+    </div>
+
+    @foreach (var info in Model)
+    {
+        <h3>@info.FirstName @info.LastName</h3>
+        <h3>@info.Email</h3>
+        <h3>@info.MobilNumber.ToString()</h3>
+
+    }
+
+</div>
+
+
+
