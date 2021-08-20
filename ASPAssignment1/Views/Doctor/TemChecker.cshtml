@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Temperature Check";
+}
+
+<div class="temform">
+    
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter Name: </td>
+                <td><input type="text" name="textBoxStringData" /></td>
+            </tr>
+            <tr>
+                <td>Enter Temperature in Celsius degrees: </td>
+                <td> <input type="text" name="textBoxfloatData" /></td>
+            </tr>
+            
+        </table>
+        <button type="submit" action="Temchecker" class="btn btn-primary">Check your fever</button>
+        <br/>
+        @ViewBag.Message
+    </form>
+</div>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Gussing Game";
+}
+
+<div class="temform">
+
+    <form method="get">
+        <table>
+          
+            <tr>
+                <td>Enter Your Guess Number: </td>
+                <td> <input type="text" name="textBoxintData" /></td>
+            </tr>
+
+        </table>
+        <button type="submit" formmethod ="post" class="btn btn-primary">Press enter to Play</button>
+        <br />
+        
+        @ViewBag.Message
+    </form>
+</div>

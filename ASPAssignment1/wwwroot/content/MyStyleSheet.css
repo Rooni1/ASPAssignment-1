@@ -1,16 +1,10 @@
-﻿{
-    box-sizing:border-box;
-}
-body {
+﻿body {
     margin: 0;
     padding: 0;
     background-color: lightgray;
-    
+    box-sizing: border-box;
 }
-.pagelayout{
-    display:flex;
-    height: 100%;
-}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -97,7 +91,7 @@ body {
 .contactinfo{
     display: flex;
     flex-direction:column;
-    background-color: white;
+   
     align-content:flex-start;
     color: black;
     width: 100%;
@@ -106,9 +100,10 @@ body {
 .myinfo{
     display: block;
     width: 100%;
-    background-color: aqua;
+   
     text-align: center;
     height: 50%;
+    padding: 1rem;
 
 }
 .projectcontainer {
@@ -137,6 +132,7 @@ body {
     align-content:center;
     
 }
+
 
 
 

@@ -20,6 +20,11 @@ namespace ASPAssignment1
             // own services
             services.AddScoped<IContactRepository, MockContactRepository>();
             services.AddControllersWithViews();
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(15);
+
+            });
            
             
         }
@@ -36,6 +41,8 @@ namespace ASPAssignment1
 
             app.UseRouting();
 
+            app.UseSession();
+
           
 
             app.UseEndpoints(endpoints =>
@@ -43,6 +50,11 @@ namespace ASPAssignment1
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                 name: "customRoute",
+                 pattern: "custom",
+                 defaults: new { controller = "Doctor", action = "Temchecker" }
+                 );
             });
         }
     }
